@@ -1,0 +1,69 @@
+{
+  "$type": "System.Collections.Generic.List`1[[CoffeShop.Lib.Customer, CoffeShop.Lib]], mscorlib",
+  "$values": [
+    {
+      "$type": "CoffeShop.Lib.Customer, CoffeShop.Lib",
+      "CustomerId": 2,
+      "Name": "111",
+      "Address": {
+        "$type": "CoffeShop.Lib.Address, CoffeShop.Lib",
+        "Street": "",
+        "City": "",
+        "Province": "",
+        "PostalCode": ""
+      },
+      "Phone": 11,
+      "Orders": {
+        "$type": "System.Collections.Generic.List`1[[CoffeShop.Lib.Order, CoffeShop.Lib]], mscorlib",
+        "$values": [
+          {
+            "$type": "CoffeShop.Lib.Order, CoffeShop.Lib",
+            "OrderId": 2,
+            "OrderTime": "2019-04-14T16:47:28.0097187-04:00",
+            "DelTime": "0001-01-01T00:00:00",
+            "DAddress": {
+              "$type": "CoffeShop.Lib.DelAddress, CoffeShop.Lib",
+              "Street": "",
+              "City": "",
+              "Province": "",
+              "PostalCode": ""
+            },
+            "Cost": 6.20,
+            "IsPhoneOrder": true,
+            "M_Item": {
+              "$type": "System.Collections.Generic.List`1[[CoffeShop.Lib.MenuItem, CoffeShop.Lib]], mscorlib",
+              "$values": [
+                {
+                  "$type": "CoffeShop.Lib.SandwichWithEggSalad, CoffeShop.Lib",
+                  "Name": "SandwichWithEggSalad",
+                  "Description": "White bread sandwich with egg salad",
+                  "BaseCost": 4.0
+                },
+                {
+                  "$type": "CoffeShop.Lib.Milk, CoffeShop.Lib",
+                  "Description": "Coffe Dark Roast, Milk, Milk",
+                  "BaseCost": 2.20,
+                  "MenuItem": {
+                    "$type": "CoffeShop.Lib.Milk, CoffeShop.Lib",
+                    "Description": "Coffe Dark Roast, Milk",
+                    "BaseCost": 2.10,
+                    "MenuItem": {
+                      "$type": "CoffeShop.Lib.CoffeeDarkRoast, CoffeShop.Lib",
+                      "Description": "Coffe Dark Roast",
+                      "BaseCost": 2.00
+                    }
+                  }
+                }
+              ]
+            },
+            "O_Item": {
+              "$type": "System.Collections.Generic.List`1[[CoffeShop.Lib.OrderItem, CoffeShop.Lib]], mscorlib",
+              "$values": []
+            },
+            "Delivered": false
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,393 @@
+{
+  "$type": "System.Collections.Generic.List`1[[CoffeShop.Lib.Customer, CoffeShop.Lib]], mscorlib",
+  "$values": [
+    {
+      "$type": "CoffeShop.Lib.Customer, CoffeShop.Lib",
+      "CustomerId": 0,
+      "Name": "Jon Smith",
+      "Address": {
+        "$type": "CoffeShop.Lib.Address, CoffeShop.Lib",
+        "Street": "35 Elm St",
+        "City": "Toronto",
+        "Province": "ON",
+        "PostalCode": "M2M 2K5"
+      },
+      "Phone": 4161234567,
+      "Orders": {
+        "$type": "System.Collections.Generic.List`1[[CoffeShop.Lib.Order, CoffeShop.Lib]], mscorlib",
+        "$values": [
+          {
+            "$type": "CoffeShop.Lib.Order, CoffeShop.Lib",
+            "OrderId": 2,
+            "OrderTime": "2019-08-05T11:49:42.47471-04:00",
+            "DelTime": "2019-08-05T11:49:42.566312-04:00",
+            "DAddress": {
+              "$type": "CoffeShop.Lib.DelAddress, CoffeShop.Lib",
+              "Street": "35 Elm St",
+              "City": "Toronto",
+              "Province": "ON",
+              "PostalCode": "M2M 2K5"
+            },
+            "Cost": 8.45,
+            "IsPhoneOrder": true,
+            "M_Item": {
+              "$type": "System.Collections.Generic.List`1[[CoffeShop.Lib.MenuItem, CoffeShop.Lib]], mscorlib",
+              "$values": [
+                {
+                  "$type": "CoffeShop.Lib.Suggar, CoffeShop.Lib",
+                  "Description": "Orginal Bland Coffee, Sugar",
+                  "BaseCost": 2.05,
+                  "MenuItem": {
+                    "$type": "CoffeShop.Lib.Coffee, CoffeShop.Lib",
+                    "Name": "Coffe",
+                    "Description": "Orginal Bland Coffee",
+                    "BaseCost": 2.0
+                  }
+                },
+                {
+                  "$type": "CoffeShop.Lib.Suggar, CoffeShop.Lib",
+                  "Description": "Orginal Bland Coffee, Sugar, Sugar",
+                  "BaseCost": 2.10,
+                  "MenuItem": {
+                    "$type": "CoffeShop.Lib.Suggar, CoffeShop.Lib",
+                    "Description": "Orginal Bland Coffee, Sugar",
+                    "BaseCost": 2.05,
+                    "MenuItem": {
+                      "$type": "CoffeShop.Lib.Coffee, CoffeShop.Lib",
+                      "Name": "Coffe",
+                      "Description": "Orginal Bland Coffee",
+                      "BaseCost": 2.0
+                    }
+                  }
+                },
+                {
+                  "$type": "CoffeShop.Lib.Suggar, CoffeShop.Lib",
+                  "Description": "Orginal Bland Coffee, Milk, Sugar",
+                  "BaseCost": 2.15,
+                  "MenuItem": {
+                    "$type": "CoffeShop.Lib.Milk, CoffeShop.Lib",
+                    "Description": "Orginal Bland Coffee, Milk",
+                    "BaseCost": 2.10,
+                    "MenuItem": {
+                      "$type": "CoffeShop.Lib.Coffee, CoffeShop.Lib",
+                      "Name": "Coffe",
+                      "Description": "Orginal Bland Coffee",
+                      "BaseCost": 2.0
+                    }
+                  }
+                },
+                {
+                  "$type": "CoffeShop.Lib.Suggar, CoffeShop.Lib",
+                  "Description": "Orginal Bland Coffee, Milk, Sugar",
+                  "BaseCost": 2.15,
+                  "MenuItem": {
+                    "$type": "CoffeShop.Lib.Milk, CoffeShop.Lib",
+                    "Description": "Orginal Bland Coffee, Milk",
+                    "BaseCost": 2.10,
+                    "MenuItem": {
+                      "$type": "CoffeShop.Lib.Coffee, CoffeShop.Lib",
+                      "Name": "Coffe",
+                      "Description": "Orginal Bland Coffee",
+                      "BaseCost": 2.0
+                    }
+                  }
+                }
+              ]
+            },
+            "O_Item": {
+              "$type": "System.Collections.Generic.List`1[[CoffeShop.Lib.OrderItem, CoffeShop.Lib]], mscorlib",
+              "$values": []
+            },
+            "Delivered": true
+          },
+          {
+            "$type": "CoffeShop.Lib.Order, CoffeShop.Lib",
+            "OrderId": 5,
+            "OrderTime": "2019-08-05T11:49:42.4995244-04:00",
+            "DelTime": "2019-08-05T11:49:42.566312-04:00",
+            "DAddress": {
+              "$type": "CoffeShop.Lib.DelAddress, CoffeShop.Lib",
+              "Street": "35 Elm St",
+              "City": "Toronto",
+              "Province": "ON",
+              "PostalCode": "M2M 2K5"
+            },
+            "Cost": 7.00,
+            "IsPhoneOrder": true,
+            "M_Item": {
+              "$type": "System.Collections.Generic.List`1[[CoffeShop.Lib.MenuItem, CoffeShop.Lib]], mscorlib",
+              "$values": [
+                {
+                  "$type": "CoffeShop.Lib.Milk, CoffeShop.Lib",
+                  "Description": "Tea, Milk, Milk",
+                  "BaseCost": 2.00,
+                  "MenuItem": {
+                    "$type": "CoffeShop.Lib.Milk, CoffeShop.Lib",
+                    "Description": "Tea, Milk",
+                    "BaseCost": 1.90,
+                    "MenuItem": {
+                      "$type": "CoffeShop.Lib.Tea, CoffeShop.Lib",
+                      "Description": "Tea",
+                      "BaseCost": 1.80
+                    }
+                  }
+                },
+                {
+                  "$type": "CoffeShop.Lib.SandwichWithBacon, CoffeShop.Lib",
+                  "Name": "SandwichWithBacon",
+                  "Description": "White bread sandwich with bacon",
+                  "BaseCost": 5.0
+                }
+              ]
+            },
+            "O_Item": {
+              "$type": "System.Collections.Generic.List`1[[CoffeShop.Lib.OrderItem, CoffeShop.Lib]], mscorlib",
+              "$values": []
+            },
+            "Delivered": true
+          }
+        ]
+      }
+    },
+    {
+      "$type": "CoffeShop.Lib.Customer, CoffeShop.Lib",
+      "CustomerId": 2,
+      "Name": "Ann Brown",
+      "Address": {
+        "$type": "CoffeShop.Lib.Address, CoffeShop.Lib",
+        "Street": "35 Queen St",
+        "City": "Toronto",
+        "Province": "ON",
+        "PostalCode": "M2T 1M1"
+      },
+      "Phone": 4169876543,
+      "Orders": {
+        "$type": "System.Collections.Generic.List`1[[CoffeShop.Lib.Order, CoffeShop.Lib]], mscorlib",
+        "$values": [
+          {
+            "$type": "CoffeShop.Lib.Order, CoffeShop.Lib",
+            "OrderId": 3,
+            "OrderTime": "2019-08-05T11:49:42.4995244-04:00",
+            "DelTime": "2019-08-05T11:49:42.566312-04:00",
+            "DAddress": {
+              "$type": "CoffeShop.Lib.DelAddress, CoffeShop.Lib",
+              "Street": "35 Queen St",
+              "City": "Toronto",
+              "Province": "ON",
+              "PostalCode": "M2T 1M1"
+            },
+            "Cost": 4.20,
+            "IsPhoneOrder": true,
+            "M_Item": {
+              "$type": "System.Collections.Generic.List`1[[CoffeShop.Lib.MenuItem, CoffeShop.Lib]], mscorlib",
+              "$values": [
+                {
+                  "$type": "CoffeShop.Lib.Milk, CoffeShop.Lib",
+                  "Description": "Orginal Bland Coffee, Milk",
+                  "BaseCost": 2.10,
+                  "MenuItem": {
+                    "$type": "CoffeShop.Lib.Coffee, CoffeShop.Lib",
+                    "Name": "Coffe",
+                    "Description": "Orginal Bland Coffee",
+                    "BaseCost": 2.0
+                  }
+                },
+                {
+                  "$type": "CoffeShop.Lib.Milk, CoffeShop.Lib",
+                  "Description": "Orginal Bland Coffee, Milk",
+                  "BaseCost": 2.10,
+                  "MenuItem": {
+                    "$type": "CoffeShop.Lib.Coffee, CoffeShop.Lib",
+                    "Name": "Coffe",
+                    "Description": "Orginal Bland Coffee",
+                    "BaseCost": 2.0
+                  }
+                }
+              ]
+            },
+            "O_Item": {
+              "$type": "System.Collections.Generic.List`1[[CoffeShop.Lib.OrderItem, CoffeShop.Lib]], mscorlib",
+              "$values": []
+            },
+            "Delivered": true
+          }
+        ]
+      }
+    },
+    {
+      "$type": "CoffeShop.Lib.Customer, CoffeShop.Lib",
+      "CustomerId": 3,
+      "Name": "John Dow",
+      "Address": {
+        "$type": "CoffeShop.Lib.Address, CoffeShop.Lib",
+        "Street": "",
+        "City": "Toronto",
+        "Province": "ON",
+        "PostalCode": ""
+      },
+      "Phone": 0,
+      "Orders": {
+        "$type": "System.Collections.Generic.List`1[[CoffeShop.Lib.Order, CoffeShop.Lib]], mscorlib",
+        "$values": [
+          {
+            "$type": "CoffeShop.Lib.Order, CoffeShop.Lib",
+            "OrderId": 4,
+            "OrderTime": "2019-08-05T11:49:42.4995244-04:00",
+            "DelTime": "2019-08-05T11:49:42.566312-04:00",
+            "DAddress": {
+              "$type": "CoffeShop.Lib.DelAddress, CoffeShop.Lib",
+              "Street": "",
+              "City": "Toronto",
+              "Province": "ON",
+              "PostalCode": ""
+            },
+            "Cost": 6.00,
+            "IsPhoneOrder": true,
+            "M_Item": {
+              "$type": "System.Collections.Generic.List`1[[CoffeShop.Lib.MenuItem, CoffeShop.Lib]], mscorlib",
+              "$values": [
+                {
+                  "$type": "CoffeShop.Lib.Milk, CoffeShop.Lib",
+                  "Description": "Coffe Dark Roast, Milk, Milk",
+                  "BaseCost": 2.20,
+                  "MenuItem": {
+                    "$type": "CoffeShop.Lib.Milk, CoffeShop.Lib",
+                    "Description": "Coffe Dark Roast, Milk",
+                    "BaseCost": 2.10,
+                    "MenuItem": {
+                      "$type": "CoffeShop.Lib.CoffeeDarkRoast, CoffeShop.Lib",
+                      "Description": "Coffe Dark Roast",
+                      "BaseCost": 2.00
+                    }
+                  }
+                },
+                {
+                  "$type": "CoffeShop.Lib.Milk, CoffeShop.Lib",
+                  "Description": "Tea, Milk",
+                  "BaseCost": 1.90,
+                  "MenuItem": {
+                    "$type": "CoffeShop.Lib.Tea, CoffeShop.Lib",
+                    "Description": "Tea",
+                    "BaseCost": 1.80
+                  }
+                },
+                {
+                  "$type": "CoffeShop.Lib.Milk, CoffeShop.Lib",
+                  "Description": "Tea, Milk",
+                  "BaseCost": 1.90,
+                  "MenuItem": {
+                    "$type": "CoffeShop.Lib.Tea, CoffeShop.Lib",
+                    "Description": "Tea",
+                    "BaseCost": 1.80
+                  }
+                }
+              ]
+            },
+            "O_Item": {
+              "$type": "System.Collections.Generic.List`1[[CoffeShop.Lib.OrderItem, CoffeShop.Lib]], mscorlib",
+              "$values": []
+            },
+            "Delivered": true
+          }
+        ]
+      }
+    },
+    {
+      "$type": "CoffeShop.Lib.Customer, CoffeShop.Lib",
+      "CustomerId": 1,
+      "Name": "Coffee and sandwiches",
+      "Address": {
+        "$type": "CoffeShop.Lib.Address, CoffeShop.Lib",
+        "Street": "1 King St",
+        "City": "Toronto,",
+        "Province": "ON",
+        "PostalCode": " M1M 1M1"
+      },
+      "Phone": 0,
+      "Orders": {
+        "$type": "System.Collections.Generic.List`1[[CoffeShop.Lib.Order, CoffeShop.Lib]], mscorlib",
+        "$values": [
+          {
+            "$type": "CoffeShop.Lib.Order, CoffeShop.Lib",
+            "OrderId": 6,
+            "OrderTime": "2019-08-05T11:49:42.5006514-04:00",
+            "DelTime": "2019-08-05T11:49:42.5006514-04:00",
+            "DAddress": {
+              "$type": "CoffeShop.Lib.DelAddress, CoffeShop.Lib",
+              "Street": "1 King St",
+              "City": "TORONTO",
+              "Province": "ON",
+              "PostalCode": "M1M 1M1"
+            },
+            "Cost": 5.0,
+            "IsPhoneOrder": false,
+            "M_Item": {
+              "$type": "System.Collections.Generic.List`1[[CoffeShop.Lib.MenuItem, CoffeShop.Lib]], mscorlib",
+              "$values": [
+                {
+                  "$type": "CoffeShop.Lib.SandwichWithBacon, CoffeShop.Lib",
+                  "Name": "SandwichWithBacon",
+                  "Description": "White bread sandwich with bacon",
+                  "BaseCost": 5.0
+                }
+              ]
+            },
+            "O_Item": {
+              "$type": "System.Collections.Generic.List`1[[CoffeShop.Lib.OrderItem, CoffeShop.Lib]], mscorlib",
+              "$values": []
+            },
+            "Delivered": true
+          },
+          {
+            "$type": "CoffeShop.Lib.Order, CoffeShop.Lib",
+            "OrderId": 7,
+            "OrderTime": "2019-08-05T11:49:42.5006514-04:00",
+            "DelTime": "2019-08-05T11:49:42.5006514-04:00",
+            "DAddress": {
+              "$type": "CoffeShop.Lib.DelAddress, CoffeShop.Lib",
+              "Street": "1 King St",
+              "City": "TORONTO",
+              "Province": "ON",
+              "PostalCode": "M1M 1M1"
+            },
+            "Cost": 13.80,
+            "IsPhoneOrder": false,
+            "M_Item": {
+              "$type": "System.Collections.Generic.List`1[[CoffeShop.Lib.MenuItem, CoffeShop.Lib]], mscorlib",
+              "$values": [
+                {
+                  "$type": "CoffeShop.Lib.SandwichWithRoastedBeef, CoffeShop.Lib",
+                  "Name": "SandwichWithRoastedBeef",
+                  "Description": "White bread sandwich with roasted beef",
+                  "BaseCost": 5.5
+                },
+                {
+                  "$type": "CoffeShop.Lib.SandwichWithEggSalad, CoffeShop.Lib",
+                  "Name": "SandwichWithEggSalad",
+                  "Description": "White bread sandwich with egg salad",
+                  "BaseCost": 4.0
+                },
+                {
+                  "$type": "CoffeShop.Lib.Lettuce, CoffeShop.Lib",
+                  "Description": "White bread sandwich with egg salad, Lettuce",
+                  "BaseCost": 4.30,
+                  "MenuItem": {
+                    "$type": "CoffeShop.Lib.SandwichWithEggSalad, CoffeShop.Lib",
+                    "Name": "SandwichWithEggSalad",
+                    "Description": "White bread sandwich with egg salad",
+                    "BaseCost": 4.0
+                  }
+                }
+              ]
+            },
+            "O_Item": {
+              "$type": "System.Collections.Generic.List`1[[CoffeShop.Lib.OrderItem, CoffeShop.Lib]], mscorlib",
+              "$values": []
+            },
+            "Delivered": true
+          }
+        ]
+      }
+    }
+  ]
+}
